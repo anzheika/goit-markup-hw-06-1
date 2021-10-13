@@ -422,7 +422,67 @@
         </button>
         <form action="" class="modal-form">
           <p class="modal-form-text">Оставьте свои данные, мы вам перезвоним</p>
-          label.modal-form-field
+          <label class="modal-form-field"
+            >Имя
+            <span class="modal-from-input-wrapper">
+              <input
+                name="user-name"
+                class="modal-from-input"
+                type="text"
+                minlength="2"
+                title="Не должно быть цифр и символов"
+                required
+              />
+              <svg class="modal-from-icon">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field"
+            >Телефон
+            <span class="modal-from-input-wrapper">
+              <input name="user-phone" class="modal-from-input" type="tel" required />
+              <svg class="modal-from-icon" width="13" height="13">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field"
+            >Почта
+            <span class="modal-from-input-wrapper">
+              <input
+                name="user-email"
+                class="modal-from-input"
+                type="email"
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                required
+              />
+              <svg class="modal-from-icon" width="12" height="12">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field"
+            >Комментарий
+            <textarea
+              class="modal-form-message"
+              name="user-message"
+              id=""
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <input
+            class="modal-form-checkbox"
+            type="checkbox"
+            name="accept-policy"
+            id="accept-policy"
+            required
+          />
+          <label class="modal-form-checkbox-label" for="accept-policy"
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="" class="modal-from-checkbox-link">Условия договора</a>
+          </label>
+          <button type="submit" class="modal-form-button button">Отправить</button>
         </form>
       </div>
     </div>
