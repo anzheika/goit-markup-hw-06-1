@@ -411,18 +411,26 @@
             </li>
           </ul>
         </div>
-        <form action="" class="subscribe-modal-form">
-          <label class="subscribe-modal-form-label"
+        <span class="subscribe-wrapper">
+          <form action="" class="subscribe-modal-form">
+                      <label class="subscribe-modal-form-label"
             >Подпишитесь на рассылку
-            <textarea
-              class="subscribe-modal-form-message"
-              name="user-message"
-              id=""
-              placeholder="E-mail"
-            ></textarea>
+            <span class="modal-from-input-wrapper">
+              <input
+                name="user-email"
+                class="subscribe-modal-form-message"
+                required
+                placeholder="E-mail"
+              />
+            
           </label>
-          <button type="submit">Подписаться</button>
-        </form>
+            <button class="subscribe-modal-button button" type="submit">Подписаться</button>
+                 <svg class="subscribe-modal-from-icon">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </span>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
