@@ -1056,7 +1056,17 @@ button {
 }
 
 /* ======SUBSCRIBE IN FOOTER */
-.subscribe-modal-form-label {
+
+.subscribe-wrapper {
+  display: flex;
+  margin-left: 94px;
+}
+
+.subscribe-from-input-wrapper {
+  display: flex;
+}
+
+.subscribe-modal-form-title {
   font-family: inherit;
   font-weight: bold;
   font-size: 14px;
@@ -1064,6 +1074,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .subscribe-modal-form-message {
   width: 358px;
@@ -1077,6 +1088,7 @@ button {
   padding-bottom: 15px;
   padding-top: 15px;
   padding-left: 16px;
+  margin-right: 12px;
 }
 .subscribe-modal-form-message:focus {
   outline: none;
@@ -1101,10 +1113,10 @@ button {
   font-size: 16px;
   line-height: calc(30 / 16);
   background-image: url();
-  padding-top: 10px;
-  padding-right: 62px;
-  padding-bottom: 10px;
-  padding-left: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .subscribe-modal-button:hover,
@@ -1112,6 +1124,8 @@ button {
   background-color: #188ce8;
 }
 .subscribe-modal-from-icon {
+  fill: var(--primary-bg-color);
   width: 24px;
   height: 24px;
+  margin-left: 10px;
 }
