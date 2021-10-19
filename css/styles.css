@@ -1017,6 +1017,7 @@ button {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  margin-right: 2px;
 }
 
 .modal-form-checkbox-link {
@@ -1024,7 +1025,7 @@ button {
   color: var(--accent-color);
 }
 
-.modal-form-checkbox-label::before {
+/* .modal-form-checkbox-label::before {
   content: '';
   display: block;
   width: 18px;
@@ -1044,7 +1045,7 @@ button {
   background-image: url(../images/icon-check.svg);
   border: none;
   color: var(--accent-color);
-}
+} */
 
 .modal-form-button {
   font-family: inherit;
@@ -1065,7 +1066,35 @@ button {
   background-color: #188ce8;
 }
 
+.subscribe-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 /* ======SUBSCRIBE IN FOOTER */
+
+.modal-form-checkbox {
+  fill: white;
+}
+
+.modal-checkbox:checked + .modal-form-checkbox-label span {
+  background-color: var(--accent-color);
+  fill: white;
+  border: none;
+}
+.modal-form-checkbox {
+  width: 16px;
+  height: 15px;
+  display: flex;
+  border: 2.5px solid var(--title-text-color);
+  cursor: pointer;
+  border-radius: 2px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
 
 .subscribe-wrapper {
   display: flex;
@@ -1146,4 +1175,24 @@ button {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+
+.modal-form-checkbox {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #303030;
+  border-radius: 3px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-checkbox:focus + .modal-form-checkbox-label span {
+  border-color: var(--accent-color);
+}
+
+.modal-form-checkbox:hover,
+.modal-form-checkbox:focus {
+  border-color: var(--accent-color);
 }
