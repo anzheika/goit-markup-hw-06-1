@@ -877,7 +877,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
 }
 
 .is-hidden {
@@ -888,7 +888,7 @@ button {
 
 .modal {
   width: 528px;
-  min-height: 582px;
+  height: 582px;
   background-color: white;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -1130,6 +1130,7 @@ button {
   margin-right: 12px;
   color: var(--primary-bg-color);
   text-transform: capitalize;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-modal-form-message:focus,
